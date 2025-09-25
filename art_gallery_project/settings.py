@@ -23,7 +23,7 @@ DATABASES = {
         'USER': 'art_user',
         'PASSWORD': 'Nepjoon123',
         'HOST': '3.27.32.48',
-        'PORT': '3306',
+        'PORT': '3307',
     }
 }
 
