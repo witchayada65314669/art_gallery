@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แกลเลอรีศิลปกรรม</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <h1>The 69th National Exhibition of Art</h1>
+  <div class="gallery">
+    {% for art in artworks %}
+      <div class="card">
+        <img src="{{ art.image_url }}" alt="{{ art.title }}">
+        <h2>{{ art.title }}</h2>
+        <p>{{ art.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
